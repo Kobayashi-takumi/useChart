@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
     "target": "es5",
     "lib": [
       "dom",
@@ -7,19 +8,23 @@
       "esnext"
     ],
     "allowJs": true,
+    "checkJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
     "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "removeComments": true,
     "noEmit": true,
+    "strict": true,
+    "strictNullChecks": false,
     "jsx": "react"
   },
   "include": [
-    "src"
+    "src/"
   ]
 }

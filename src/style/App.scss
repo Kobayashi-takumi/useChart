@@ -1,0 +1,135 @@
+.bubble-chart {
+  fill-opacity: 0.5;
+  fill: #5599ff;
+  stroke: #ffe600;
+  stroke-width: 2px;
+
+  .hover {
+    fill-opacity: 1;
+  }
+
+  .tooltip {
+    position: fixed;
+    width: auto;
+    height: auto;
+    padding: 0.8rem 1.6rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 1rem;
+    border-radius: 1rem;
+    visibility: hidden;
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        margin: auto;
+      }
+    }
+  }
+}
+
+.histogram {
+  .bar-chart-data {
+    fill-opacity: 0.7;
+
+    &.up {
+      fill: #4ad9ff;
+      stroke: #0a99ff;
+
+      &.hover {
+        fill: #0a99ff;
+        opacity: 0.5;
+      }
+    }
+
+    &.down {
+      fill: #ff7857;
+      stroke: #ff5431;
+
+      &.hover {
+        fill: #ff5431;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .zero-line {
+    stroke: black;
+    fill: black;
+    stroke-width: 0.1rem;
+    shape-rendering: crispEdges;
+  }
+
+  .title {
+    fill: black;
+  }
+
+  .y_axsis_label {
+    fill: #aaaaaa;
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+
+  .x-axis,
+  .y-axis {
+
+    path,
+    line {
+      stroke: blackt;
+      shape-rendering: crispEdges;
+    }
+
+    text {
+      fill: black;
+    }
+  }
+
+  .tooltip {
+    position: fixed;
+    width: auto;
+    height: auto;
+    padding: 0.8rem 1.6rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 1rem;
+    border-radius: 1rem;
+    visibility: hidden;
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        margin: auto;
+      }
+    }
+  }
+}
+
+.svg {
+  width: 500px;
+  height: 100px;
+
+  #layer_2 {
+    .cls-1 {
+      fill: yellow;
+      animation: opacity 1s infinite;
+    }
+  }
+
+  @keyframes opacity {
+    0% {
+      fill-opacity: 0;
+    }
+
+    50% {
+      fill-opacity: 1;
+    }
+
+    100% {
+      fill-opacity: 0;
+    }
+  }
+}
